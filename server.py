@@ -103,7 +103,7 @@ def process_login_page(username: str=Form(...), password: str=Form(...)):
 @app.post('/login')
 def process_login_page(data: dict = Body(...)):
     #JSON
-    print('data is ', data)
+    #print('data is ', data)
     username = data['username']
     password = data['password']
     user = users.get(username)
